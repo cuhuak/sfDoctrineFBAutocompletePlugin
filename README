@@ -1,0 +1,33 @@
+# Symfony Jquery FaceBook Style Autocompleter based on #
+
+## Whats new ##
+V0.1 - initial Version
+
+
+## Installation ##
+You must enable the module for the nested set manager in your application settings.yml
+
+    [yaml]
+    all:
+      .settings:
+      enabled_modules:        [default, sfDoctrineFBAutocompleteJson ...]
+
+
+## Usage ##
+in your [mymodel]Form.class.php
+
+    [php]
+    <?php
+    ...
+    $this->widgetSchema['myfield']   = new sfWidgetFormDoctrineFBAutocompleter(array('model' => 'GenreArticle'));
+    ...?>
+
+
+## Screenshots ##
+
+![preview](http://www.negko.com/symfony/sfDoctrineFBAutocompletePlugin/screenshot1.jpg "preview")
+
+
+## Creditential ##
+
+This plugin is based on [FCBKcomplete for jQuery](http://www.emposha.com/javascript/fcbkcomplete.html "FCBKcomplete for jQuery")

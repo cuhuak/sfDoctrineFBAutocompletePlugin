@@ -1,0 +1,1 @@
+[<?php foreach($items as $k => $item): ?>{"caption":"<?php  echo $k .'-' . addslashes($item);?>", "value":<?php echo $item->id;?>}<?php if( $items->count() > $k + 1 ):?>,<?php endif;?><?php endforeach;?>]
